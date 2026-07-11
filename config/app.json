@@ -1,0 +1,83 @@
+{
+  "expo": {
+    "name": "Hodour",
+    "slug": "gestion-absence-fsr",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/logo/app_icon_1024.png",
+    "scheme": "hodour",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/images/logo/app_icon_white.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#33B7E9"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.hodour.app",
+      "bitcode": false,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Hodour uses the camera to scan QR codes for attendance verification.",
+        "NSLocationWhenInUseUsageDescription": "Hodour uses your location to verify you are at the correct location when marking attendance.",
+        "NSFaceIDUsageDescription": "Hodour uses Face ID to securely verify your identity when marking attendance."
+      }
+    },
+    "android": {
+      "package": "com.hodour.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#ffffff",
+        "foregroundImage": "./assets/images/logo/app_icon_1024.png"
+      },
+      "permissions": [
+        "android.permission.ACCESS_NETWORK_STATE",
+        "android.permission.CAMERA",
+        "android.permission.INTERNET",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/logo/app_icon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/logo/app_icon_white.png",
+          "resizeMode": "cover",
+          "backgroundColor": "#33B7E9"
+        }
+      ],
+      "expo-secure-store",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Hodour needs access to upload documents for absence justifications.",
+          "cameraPermission": "Hodour needs camera access to take photos of documents and certificates."
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow Hodour to use your location to verify you are on campus."
+        }
+      ],
+      "expo-font",
+      "expo-web-browser",
+      "expo-asset"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      }
+    }
+  }
+}
