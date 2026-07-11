@@ -1,0 +1,32 @@
+# Dependencies
+node_modules/
+
+# Expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# Native builds
+ios/
+android/
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# Env / secrets
+.env
+.env.*
+!.env.example
+
+# Logs & OS
+npm-debug.*
+yarn-error.log
+.DS_Store
+*.log
+
+# IDE
+.vscode/
+.idea/
