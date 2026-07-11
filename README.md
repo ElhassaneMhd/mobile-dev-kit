@@ -1,4 +1,4 @@
-# Hodour Mobile Kit
+# Mobile Dev Kit
 
 Reusable components, hooks, services, and architecture extracted from the Hodour mobile app (Expo + React Native + NativeWind + gluestack-ui). Use this kit to bootstrap or extend another Expo project.
 
